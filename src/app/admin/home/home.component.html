@@ -1,0 +1,26 @@
+<button (click)="logout()" class="navbar-brand pull-right ooption"><strong>Logout</strong></button>
+<mat-toolbar class="row">
+  TRADES
+</mat-toolbar>
+<br />
+<table class="blueTable">
+  <thead>
+    <tr>
+      <th>head1</th>
+      <th>head2</th>
+      <th>head3</th>
+      <th>head4</th>
+    </tr>
+  </thead>
+
+  <tbody *ngIf="trades.length != 0">
+    <tr *ngFor="let trade of trades; let i = index">
+      <td></td>
+    </tr>
+  </tbody>
+  <tbody *ngIf="trades.length == 0">
+    <tr>
+      <td colspan="4">No record found!</td>
+    </tr>
+  </tbody>
+</table>
